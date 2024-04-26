@@ -1,0 +1,525 @@
+#=====================================================================================================================================
+# CONNECT TO EXCHANGE ONLINE
+connect-ExchangeOnline
+
+#=====================================================================================================================================
+#CREATE NEW DISTRIBUTION GROUP
+New-DistributionGroup -Name "Pasadena" -RoomList
+
+#=====================================================================================================================================
+# CREATE DESK ROOM MAILBLOX 
+# DESK
+New-Mailbox -Room "413.1-PAS-4-Desk" | Set-Mailbox -Type Workspace -EmailAddresses 413.1-PAS-4-Desk@kbkg.com 
+New-Mailbox -Room "413.2-PAS-4-Desk" | Set-Mailbox -Type Workspace -EmailAddresses 413.2-PAS-4-Desk@kbkg.com 
+New-Mailbox -Room "413.3-PAS-4-Desk" | Set-Mailbox -Type Workspace -EmailAddresses 413.3-PAS-4-Desk@kbkg.com 
+New-Mailbox -Room "413.4-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 413.4-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "413.5-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 413.5-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "413.6-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 413.6-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.1-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.1-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.11-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.11-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.2-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.2-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.3-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.3-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.4-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.4-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.5-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.5-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.6-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.6-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.7-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.7-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.8-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.8-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.9-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 416.9-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "424-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 424-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.1-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.1-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.11-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.11-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.2-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.2-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.3-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.3-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.4-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.4-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.5-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.5-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.6-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.6-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.7-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.7-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.8-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.8-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.9-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 425.9-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "441.1-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 441.1-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "441.2-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 441.2-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.1-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 451.1-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.11-PAS-4-Desk" | Set-Mailbox -Type Workspace  -EmailAddresses 451.11-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.12-PAS-4-Desk" | Set-Mailbox -Type Workspace -EmailAddresses 451.12-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.13-PAS-4-Desk" | Set-Mailbox -Type Workspace -EmailAddresses 451.13-PAS-4-Desk@kbkg.com  
+New-Mailbox -Room "451.14-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.14-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.15-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.15-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.16-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.16-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.17-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.17-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.18-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.18-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.19-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.19-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.2-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.2-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.21-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.21-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.22-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.22-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.23-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.23-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.24-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.24-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.25-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.25-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.26-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.26-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.27-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.27-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.28-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.28-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.29-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.29-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.3-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.3-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.31-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.31-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.32-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.32-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.33-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.33-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.34-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.34-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.4-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.4-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.5-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.5-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.6-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.6-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.7-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.7-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.8-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.8-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.9-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.9-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "462.1-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 462.1-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "462.2-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 462.2-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "462.3-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 462.3-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "462.4-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 462.4-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "416.12-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 416.12-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "425.10-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 425.10-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.10-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.10-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.20-PAS-4-Desk" | Set-Mailbox -Type Workspace   -EmailAddresses 451.20-PAS-4-Desk@kbkg.com
+New-Mailbox -Room "451.30-PAS-4-Desk" | Set-Mailbox -Type Workspace -EmailAddresses 451.30-PAS-4-Desk@kbkg.com   
+
+# Hotel
+New-Mailbox -Room "411-PAS-4-Hotel1" | Set-Mailbox -Type Workspace -EmailAddresses 411-PAS-4-Hotel1@kbkg.com 
+New-Mailbox -Room "419-PAS-4-Hotel5" | Set-Mailbox -Type Workspace -EmailAddresses 419-PAS-4-Hotel5@kbkg.com
+New-Mailbox -Room "435-PAS-4-Hotel6" | Set-Mailbox -Type Workspace -EmailAddresses 435-PAS-4-Hotel6@kbkg.com
+New-Mailbox -Room "436-PAS-4-Hotel4" | Set-Mailbox -Type Workspace -EmailAddresses 436-PAS-4-Hotel4@kbkg.com
+New-Mailbox -Room "437-PAS-4-Hotel3" | Set-Mailbox -Type Workspace -EmailAddresses 437-PAS-4-Hotel3@kbkg.com
+New-Mailbox -Room "442-PAS-4-Hotel2" | Set-Mailbox -Type Workspace -EmailAddresses 442-PAS-4-Hotel2@kbkg.com
+
+# Shared Office
+New-Mailbox -Room "405.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace -EmailAddresses 405.1-PAS-4-SharedOffice@kbkg.com 
+New-Mailbox -Room "405.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 405.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "406.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 406.1-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "406.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 406.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "408.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 408.1-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "408.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 408.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "409.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 409.1-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "409.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 409.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "417.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 417.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "458.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 458.1-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "458.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 458.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "459.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 459.1-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "459.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 459.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "460.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 460.1-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "460.2-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace   -EmailAddresses 460.2-PAS-4-SharedOffice@kbkg.com
+New-Mailbox -Room "417.1-PAS-4-SharedOffice" | Set-Mailbox -Type Workspace -EmailAddresses 417.1-PAS-4-SharedOffice@kbkg.com   
+
+# Management Office
+New-Mailbox -Room "407-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 407-PAS-4-MgmtOffice@kbkg.com 
+New-Mailbox -Room "410-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 410-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "414-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 414-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "415-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 415-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "420-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 420-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "421-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 421-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "422-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 422-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "423-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 423-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "426-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 426-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "427-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 427-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "428-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 428-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "429-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 429-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "430-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 430-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "431-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 431-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "432-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 432-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "444-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 444-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "452-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 452-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "453-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 453-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "461-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 461-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "464-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 464-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "445-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 445-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "447-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 447-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "448-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 448-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "449-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 449-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "450-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 450-PAS-4-MgmtOffice@kbkg.com
+New-Mailbox -Room "463-PAS-4-MgmtOffice" | Set-Mailbox -Type Workspace -EmailAddresses 463-PAS-4-MgmtOffice@kbkg.com
+
+
+#=====================================================================================================================================
+# SET ROOMMAILBOX (WORKSPACE) ATTRIBUTES
+
+# DESK
+Set-Place -Identity "413.1-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "413.2-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "413.3-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "413.4-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "413.5-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "413.6-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.1-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.11-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.2-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.3-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.4-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.5-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.6-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.7-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.8-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.9-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "424-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.1-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.11-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.2-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.3-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.4-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.5-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.6-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.7-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.8-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.9-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "441.1-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "441.2-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.13-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.19-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.22-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.23-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.24-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.25-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.31-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.32-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.33-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.34-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "462.1-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "462.2-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "462.3-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "462.4-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "416.12-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "425.10-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.20-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.30-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Multiple Monitor Desk"
+Set-Place -Identity "451.1-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.11-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.12-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.14-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.15-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.16-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.17-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.18-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.2-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.21-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.26-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.27-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.28-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.29-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.3-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.4-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.5-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.6-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.7-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.8-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.9-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "451.10-PAS-4-Desk" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Desk" -PostalCode "91101" -Tags "Single Monitor Desk"
+
+# Hotel
+Set-Place -Identity "411-PAS-4-Hotel1" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Hotel" -PostalCode "91101" -Tags "Multiple Monitor Hotel Office"
+Set-Place -Identity "419-PAS-4-Hotel5" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Hotel" -PostalCode "91101" -Tags "Multiple Monitor Hotel Office"
+Set-Place -Identity "435-PAS-4-Hotel6" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Hotel" -PostalCode "91101" -Tags "Multiple Monitor Hotel Office"
+Set-Place -Identity "436-PAS-4-Hotel4" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Hotel" -PostalCode "91101" -Tags "Multiple Monitor Hotel Office"
+Set-Place -Identity "437-PAS-4-Hotel3" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Hotel" -PostalCode "91101" -Tags "Multiple Monitor Hotel Office"
+Set-Place -Identity "442-PAS-4-Hotel2" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Hotel" -PostalCode "91101" -Tags "Multiple Monitor Hotel Office"
+
+# Shared Office
+Set-Place -Identity "405.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "405.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "406.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "406.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "408.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "408.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "409.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "409.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "417.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "458.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "458.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "459.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "459.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "460.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "460.2-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+Set-Place -Identity "417.1-PAS-4-SharedOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Shared Office" -PostalCode "91101" -Tags "Multiple Monitor Shared Office"
+
+# Management Office
+Set-Place -Identity "407-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "410-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "414-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "415-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "420-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "421-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "422-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "423-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "426-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "427-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "428-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "429-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "430-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "431-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "432-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "444-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "452-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "453-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "461-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "464-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Multiple Monitor Mgmt Office"
+Set-Place -Identity "445-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "447-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "448-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "449-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "450-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Single Monitor Desk"
+Set-Place -Identity "463-PAS-4-MgmtOffice" -Building "Pasadena Building" -Capacity 1 -CountryOrRegion US -City "Pasadena" -State "California" -Floor 4 -FloorLabel "04" -Label "Management Office" -PostalCode "91101" -Tags "Single Monitor Desk"
+
+
+#=====================================================================================================================================
+#ADD MEMBERS TO THE DISTRIBUTION GROUP
+
+# DESK
+Add-DistributionGroupMember -Identity "Pasadena" -Member 413.1-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 413.2-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 413.3-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 413.4-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 413.5-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 413.6-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.1-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.11-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.2-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.3-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.4-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.5-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.6-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.7-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.8-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.9-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 424-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.1-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.11-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.2-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.3-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.4-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.5-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.6-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.7-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.8-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.9-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 441.1-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 441.2-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.13-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.19-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.22-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.23-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.24-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.25-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.31-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.32-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.33-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.34-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 462.1-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 462.2-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 462.3-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 462.4-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 416.12-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 425.10-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.20-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.30-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.1-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.11-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.12-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.14-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.15-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.16-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.17-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.18-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.2-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.21-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.26-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.27-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.28-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.29-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.3-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.4-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.5-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.6-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.7-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.8-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.9-PAS-4-Desk@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 451.10-PAS-4-Desk@kbkg.com
+
+# Hotel
+Add-DistributionGroupMember -Identity "Pasadena" -Member 411-PAS-4-Hotel1@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 419-PAS-4-Hotel5@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 435-PAS-4-Hotel6@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 436-PAS-4-Hotel4@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 437-PAS-4-Hotel3@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 442-PAS-4-Hotel2@kbkg.com
+
+# Shared Office
+Add-DistributionGroupMember -Identity "Pasadena" -Member 405.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 405.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 406.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 406.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 408.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 408.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 409.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 409.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 417.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 458.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 458.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 459.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 459.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 460.1-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 460.2-PAS-4-SharedOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 417.1-PAS-4-SharedOffice@kbkg.com
+
+# Management Office
+Add-DistributionGroupMember -Identity "Pasadena" -Member 407-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 410-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 414-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 415-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 420-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 421-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 422-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 423-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 426-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 427-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 428-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 429-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 430-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 431-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 432-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 444-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 452-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 453-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 461-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 464-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 445-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 447-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 448-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 449-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 450-PAS-4-MgmtOffice@kbkg.com
+Add-DistributionGroupMember -Identity "Pasadena" -Member 463-PAS-4-MgmtOffice@kbkg.com
+
+
+#=====================================================================================================================================
+# SET CALENDAR PROCESSING FOR ROOM MAILBOX
+
+#Desk
+Set-CalendarProcessing  -Identity 413.1-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 413.2-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 413.3-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 413.4-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 413.5-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 413.6-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.1-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.11-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.2-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.3-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.4-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.5-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.6-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.7-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.8-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.9-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 424-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.1-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.11-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.2-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.3-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.4-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.5-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.6-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.7-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.8-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.9-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 441.1-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 441.2-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.13-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.19-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.22-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.23-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.24-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.25-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.31-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.32-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.33-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.34-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 462.1-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 462.2-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 462.3-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 462.4-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 416.12-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 425.10-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.20-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.30-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.1-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.11-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.12-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.14-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.15-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.16-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.17-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.18-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.2-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.21-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.26-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.27-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.28-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.29-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.3-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.4-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.5-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.6-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.7-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.8-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.9-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 451.10-PAS-4-Desk -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+
+# Hotel
+Set-CalendarProcessing  -Identity 411-PAS-4-Hotel1 -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 419-PAS-4-Hotel5 -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 435-PAS-4-Hotel6 -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 436-PAS-4-Hotel4 -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 437-PAS-4-Hotel3 -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 442-PAS-4-Hotel2 -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+
+# Shared Office
+Set-CalendarProcessing  -Identity 405.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 406.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 406.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 408.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 408.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 409.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 409.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 417.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 458.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 458.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 459.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 459.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 460.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 460.2-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing  -Identity 417.1-PAS-4-SharedOffice -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+
+
+#=====================================================================================================================================
+$group = Get-DistributionGroup "Mgmt office authorized booking"
+Set-CalendarProcessing -Identity 410-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 414-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 415-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 420-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 421-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 422-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 423-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 426-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 427-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 428-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 429-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 430-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 431-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 432-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 444-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 452-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 453-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 461-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 464-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 445-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 447-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 448-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 449-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 450-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+Set-CalendarProcessing -Identity 463-PAS-4-MgmtOffice -BookInPolicy $group.Identity -AllBookInPolicy $false -EnforceCapacity $True -MinimumDurationInMinutes "30" -MaximumDurationInMinutes "1440" -bookingwindowindays 90
+
+#=====================================================================================================================================
+
+# # # # # # AS # # # # # #
